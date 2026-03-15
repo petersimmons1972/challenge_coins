@@ -15,14 +15,12 @@ Every coin is double-sided, 50mm diameter, 4-color, single-pass — no assembly,
 
 NCC shield logo on front · swimmer silhouette + arc text on back
 
-**Colors**
-
-| Slot | Color | Hex | Used For |
-|:---:|---|:---:|---|
-| 1 | Navy Blue | `#1B3B60` | Outer rim · diamond body · swimmer |
-| 2 | Dark Gray | `#999DA2` | Accent ring *(swap for gold to make it pop)* |
-| 3 | Carolina Blue | `#8BD1EE` | Inner field (both faces) |
-| 4 | White | `#FFFFFF` | NCC letters · arc text |
+| Slot | Color | Used For |
+|:---:|---|---|
+| 1 | 🔵 Navy Blue | Outer rim · diamond body · swimmer |
+| 2 | 🩶 Dark Gray | Accent ring *(swap for gold to make it pop)* |
+| 3 | 🩵 Carolina Blue | Inner field (both faces) |
+| 4 | ⚪ White | NCC letters · arc text |
 
 → [Full details](nccs_challenge_coin/README.md)
 
@@ -38,14 +36,12 @@ NCC shield logo on front · swimmer silhouette + arc text on back
 
 Sea turtle silhouette + "TURTLES,INC." arc on front · NCC school logo on back
 
-**Colors**
-
-| Slot | Color | Hex | Used For |
-|:---:|---|:---:|---|
-| 1 | Black | `#1A1A1A` | Outer rim · turtle silhouette · NCC diamond |
-| 2 | Gold | `#D4AF37` | Accent ring · NCC border outline |
-| 3 | Green | `#2D6A4F` | Inner field (base layer) |
-| 4 | White | `#FFFFFF` | Arc text · NCC letters |
+| Slot | Color | Used For |
+|:---:|---|---|
+| 1 | ⚫ Black | Outer rim · turtle silhouette · NCC diamond |
+| 2 | 🟡 Gold | Accent ring · NCC border outline |
+| 3 | 🟢 Green | Inner field (base layer) |
+| 4 | ⚪ White | Arc text · NCC letters |
 
 → [Full details](turtles/README.md)
 
