@@ -1,73 +1,85 @@
 # Challenge Coins
 
-A collection of 3D-printed, multi-color challenge coins designed for the **Bambu P1S + AMS Pro 2**.
-
-Every coin is double-sided, 50mm diameter, 4-color, and prints in a single pass — no assembly, no glue.
-
----
-
-## Coins
-
-| Coin | Description | Colors | Status |
-|---|---|---|---|
-| [NCCS Challenge Coin](nccs_challenge_coin/) | North Cobb Christian School 2026 Swim Team — NCC shield (obverse) + swimmer silhouette (reverse) | Navy · Gray · Carolina Blue · White | ✅ Complete |
-| [Turtles Challenge Coin](turtles/) | Turtles, Inc. 5th grade business club — sea turtle (obverse) + NCC school logo (reverse) | Black · Gold · Green · White |  ✅ Complete |
+A collection of 3D-printed, multi-color challenge coins for the **Bambu P1S + AMS Pro 2**.
+Every coin is double-sided, 50mm diameter, 4-color, single-pass — no assembly, no glue.
 
 ---
 
-## Gallery
+## NCCS Challenge Coin
 
-### NCCS Challenge Coin
+**North Cobb Christian School · 2026 Swim Team**
 
 | Obverse (Front) | Reverse (Back) |
-|---|---|
+|:---:|:---:|
 | ![NCCS Obverse](nccs_challenge_coin/build/coin_top.png) | ![NCCS Reverse](nccs_challenge_coin/build/coin_reverse.png) |
 
-### Turtles Challenge Coin
+NCC shield logo on front · swimmer silhouette + arc text on back
+
+**Colors**
+
+| Slot | Color | Hex | Used For |
+|:---:|---|:---:|---|
+| 1 | Navy Blue | `#1B3B60` | Outer rim · diamond body · swimmer |
+| 2 | Dark Gray | `#999DA2` | Accent ring *(swap for gold to make it pop)* |
+| 3 | Carolina Blue | `#8BD1EE` | Inner field (both faces) |
+| 4 | White | `#FFFFFF` | NCC letters · arc text |
+
+→ [Full details](nccs_challenge_coin/README.md)
+
+---
+
+## Turtles Challenge Coin
+
+**Turtles, Inc. · 5th Grade Business Club · 2025–2026**
 
 | Obverse (Front) | Reverse (Back) |
+|:---:|:---:|
+| ![Turtles Obverse](turtles/build/coin_obverse.png) | ![Turtles Reverse](turtles/build/coin_reverse.png) |
+
+Sea turtle silhouette + "TURTLES,INC." arc on front · NCC school logo on back
+
+**Colors**
+
+| Slot | Color | Hex | Used For |
+|:---:|---|:---:|---|
+| 1 | Black | `#1A1A1A` | Outer rim · turtle silhouette · NCC diamond |
+| 2 | Gold | `#D4AF37` | Accent ring · NCC border outline |
+| 3 | Green | `#2D6A4F` | Inner field (base layer) |
+| 4 | White | `#FFFFFF` | Arc text · NCC letters |
+
+→ [Full details](turtles/README.md)
+
+---
+
+## Specifications
+
+| Parameter | Value |
 |---|---|
-| ![Turtles Obverse](turtles/build/coin_top.png) | ![Turtles Reverse](turtles/build/coin_reverse.png) |
+| Diameter | 50 mm |
+| Thickness | 5.0 mm |
+| Relief height | 0.6 mm |
+| Colors | 4 (AMS slots 1–4) |
+| Supports | None required |
 
 ---
 
-## Build Requirements
+## Build
 
-- [OpenSCAD](https://openscad.org/) (any recent version)
-- Python 3 + `pip install pillow pytest`
-- Bambu Studio 02.05.00.66+
-- Bambu P1S with AMS Pro 2 (4 slots)
-
----
-
-## Quick Start
+**Requirements:** OpenSCAD · Python 3 · `pip install pillow pytest` · Bambu Studio 02.05.00.66+
 
 ```bash
-# Build a specific coin
-cd nccs_challenge_coin/
-./build.sh                        # renders STLs + preview PNGs
-python3 create_3mf.py             # packages Bambu-native 3MF
-python3 -m pytest test_3mf.py -v  # verify (18 tests)
+cd nccs_challenge_coin/        # or turtles/
+./build.sh                     # render STLs + preview PNGs
+python3 create_3mf.py          # package Bambu-native 3MF
+python3 -m pytest test_3mf.py  # verify (18 tests)
 # Open build/*.3mf in Bambu Studio
 ```
 
----
-
-## Design Standards
-
-All coins share the same architecture:
-
-- **50mm diameter · 5mm thick · 0.6mm relief**
-- **4-color AMS** — each layer geometrically exclusive (zero mesh overlap)
-- **Single-print double-sided** — obverse at z=4.4–5.0mm, reverse at z=0–0.6mm
-- **Reverse face** wrapped in `mirror([1,0,0])` for correct readout when flipped
-- **OpenSCAD** parametric source with `COLOR=N` parameter for per-layer export
-
-See [CLAUDE.md](CLAUDE.md) for full shared standards and build patterns.
+See [CLAUDE.md](CLAUDE.md) for shared design standards.
 
 ---
 
 ## License
 
-Individual coin designs may have different licenses — see each coin's README.
 Build tooling (`create_3mf.py`, `test_3mf.py`, `build.sh`) is MIT.
+Individual coin designs may differ — see each coin's README.
