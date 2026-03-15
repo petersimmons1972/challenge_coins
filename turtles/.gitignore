@@ -1,0 +1,10 @@
+# Generated preview images (regenerate with build.sh)
+build/*.png
+
+# Python cache
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# OS
+.DS_Store
