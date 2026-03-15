@@ -60,15 +60,31 @@ module bottom_arc_text(str, radius, size, start_angle, char_angle) {
 // =================================================================
 
 module obverse_vader_2d() {
+    // Outer silhouette minus inner detail cutouts (eyes, nose, mouth grille)
+    // — green base shows through the cutouts giving helmet detail
     scale([vader_scale, vader_scale])
-        import("vader_helmet.svg", center=true);
+        difference() {
+            import("vader_outer.svg", center=true);
+            import("vader_details.svg", center=true);
+        }
 }
 
 module obverse_text_2d() {
+    // Top arc: "DARTH VADER DRINK" — 17 chars
+    // start_angle = (17-1)/2 * 5.5 = 44
+    arc_text("DARTH VADER DRINK", radius=text_r, size=2.2,
+             start_angle=44, char_angle=5.5);
+    // Bottom arc: "PETERSIMMONS@DUCK.COM" — 21 chars
+    // start_angle = -(21-1)/2 * 5 = -50
+    bottom_arc_text("PETERSIMMONS@DUCK.COM", radius=text_r, size=1.9,
+                    start_angle=-50, char_angle=5);
+}
+
+module reverse_text_2d() {
     // Top arc: "VENTI SALTED CARAMEL CREAM COLD BREW" — 36 chars
-    // start_angle = (36-1)/2 * 4.5 = 78.75
-    arc_text("VENTI SALTED CARAMEL CREAM COLD BREW", radius=text_r, size=1.8,
-             start_angle=78.75, char_angle=4.5);
+    // start_angle = (36-1)/2 * 4.8 = 84
+    arc_text("VENTI SALTED CARAMEL CREAM COLD BREW", radius=text_r, size=2.0,
+             start_angle=87.5, char_angle=5.0);
     // Bottom arc: "... BUT DARK CARAMEL" — 20 chars
     // start_angle = -(20-1)/2 * 6.5 = -61.75
     bottom_arc_text("... BUT DARK CARAMEL", radius=text_r, size=2.2,
@@ -104,6 +120,11 @@ module white_text_3d() {
 module white_siren_3d() {
     linear_extrude(height=relief)
         mirror([1, 0, 0]) reverse_siren_2d();
+}
+
+module white_reverse_text_3d() {
+    linear_extrude(height=relief)
+        mirror([1, 0, 0]) reverse_text_2d();
 }
 
 // =================================================================
@@ -143,8 +164,9 @@ module green_parts() {
             // Obverse
             black_vader_3d();
             white_text_3d();
-            // Reverse — subtract full siren footprint
+            // Reverse — subtract siren + arc text
             white_siren_3d();
+            white_reverse_text_3d();
         }
     }
 }
@@ -154,6 +176,7 @@ module white_parts() {
     color(white_c) {
         white_text_3d();
         white_siren_3d();
+        white_reverse_text_3d();
     }
 }
 
@@ -163,3 +186,6 @@ else if (COLOR == 1) { black_parts(); }
 else if (COLOR == 2) { gold_parts(); }
 else if (COLOR == 3) { green_parts(); }
 else if (COLOR == 4) { white_parts(); }
+// Preview-only modes (obverse / reverse white split, not for printing)
+else if (COLOR == 5) { color(white_c) { white_text_3d(); } }
+else if (COLOR == 6) { color(white_c) { white_siren_3d(); white_reverse_text_3d(); } }
