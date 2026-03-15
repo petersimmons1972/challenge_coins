@@ -172,10 +172,10 @@ module obverse_text_2d() {
              radius=text_r, size=2.3,
              start_angle=61, char_angle=7.2);
 
-    // "SWIM CLUB · 2026" — bottom arc
-    bottom_arc_text("SWIM CLUB · 2026",
+    // "WOODSTOCK" — bottom arc
+    bottom_arc_text("WOODSTOCK",
                     radius=text_r, size=2.3,
-                    start_angle=-44, char_angle=6.8);
+                    start_angle=-32, char_angle=8.0);
 }
 
 // =====================================================================
