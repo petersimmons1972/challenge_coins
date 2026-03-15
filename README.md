@@ -1,7 +1,7 @@
 # Challenge Coins
 
 A collection of 3D-printed, multi-color challenge coins for the **Bambu P1S + AMS Pro 2**.
-Every coin is double-sided, 50mm diameter, 4-color, single-pass — no assembly, no glue.
+Every coin is double-sided, 50mm diameter, 3–4 color, single-pass — no assembly, no glue.
 
 ---
 
@@ -65,6 +65,26 @@ Vader helmet silhouette + drink order arc text on front · Starbucks siren on ba
 |  4   | ⚪ White           | Arc text · Starbucks siren (reverse)            |
 
 → [Full details](darth_vader/README.md)
+
+---
+
+## Chattahoochee Gold Challenge Coin
+
+**Chattahoochee Gold Swim Club · 2026**
+
+| Obverse (Front) | Reverse (Back) |
+|:---:|:---:|
+| ![Gold Obverse](gold/build/coin_obverse.png) | ![Gold Reverse](gold/build/coin_reverse.png) |
+
+Trident logo (held at angle) + arc text on front · swimmer silhouette + arc text on back
+
+| Slot | Color        | Used For                                   |
+|:----:|--------------|--------------------------------------------|
+|  1   | 🟡 Gold      | Outer rim · trident (obverse) · swimmer    |
+|  2   | 🔵 Navy      | Inner field (base layer, both faces)       |
+|  3   | ⚪ White     | Arc text (both faces)                      |
+
+→ [Full details](gold/README.md)
 
 ---
 

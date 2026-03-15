@@ -67,6 +67,13 @@ See `~/projects/3dprint/lessons/` for:
 | 3 | Green | #2D6A4F | Inner field (base layer) |
 | 4 | White | #FFFFFF | Arc text + NCC letters |
 
+### Chattahoochee Gold Challenge Coin (`gold/`)
+| Slot | Color | Hex | Used For |
+|---|---|---|---|
+| 1 | Gold  | #FFD324 | Rim, trident (obverse), swimmer (reverse) |
+| 2 | Navy  | #000B39 | Inner field both faces (base layer) |
+| 3 | White | #FFFFFF | Arc text both faces |
+
 ### Darth Vader Challenge Coin (`darth_vader/`)
 | Slot | Color           | Hex       | Used For                                    |
 |---|---|---|---|
