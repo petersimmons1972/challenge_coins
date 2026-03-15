@@ -67,6 +67,14 @@ See `~/projects/3dprint/lessons/` for:
 | 3 | Green | #2D6A4F | Inner field (base layer) |
 | 4 | White | #FFFFFF | Arc text + NCC letters |
 
+### Darth Vader Challenge Coin (`darth_vader/`)
+| Slot | Color           | Hex       | Used For                                    |
+|---|---|---|---|
+| 1 | Black           | #1A1A1A | Rim, Vader helmet silhouette (obverse)      |
+| 2 | Starbucks Gold  | #CBA258 | Accent ring                                 |
+| 3 | Starbucks Green | #00704A | Inner field (base layer)                    |
+| 4 | White           | #FFFFFF | Arc text (obverse) + Starbucks siren (reverse) |
+
 ## Adding a New Coin
 
 1. Create a new subdirectory: `mkdir new_coin_name/`

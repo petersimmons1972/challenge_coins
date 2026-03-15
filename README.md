@@ -47,6 +47,27 @@ Sea turtle silhouette + "TURTLES,INC." arc on front · NCC school logo on back
 
 ---
 
+## Darth Vader Challenge Coin
+
+**Inside Joke · Starbucks Edition · 2026**
+
+| Obverse (Front) | Reverse (Back) |
+|:---:|:---:|
+| ![Darth Vader Obverse](darth_vader/build/coin_obverse.png) | ![Darth Vader Reverse](darth_vader/build/coin_reverse.png) |
+
+Vader helmet silhouette + drink order arc text on front · Starbucks siren on back
+
+| Slot | Color              | Used For                                        |
+|:----:|--------------------|--------------------------------------------------|
+|  1   | ⚫ Black           | Outer rim · Vader helmet silhouette             |
+|  2   | 🟡 Starbucks Gold  | Accent ring                                     |
+|  3   | 🟢 Starbucks Green | Inner field (base layer)                        |
+|  4   | ⚪ White           | Arc text · Starbucks siren (reverse)            |
+
+→ [Full details](darth_vader/README.md)
+
+---
+
 ## Specifications
 
 | Parameter     | Value             |
