@@ -15,12 +15,12 @@ Every coin is double-sided, 50mm diameter, 4-color, single-pass — no assembly,
 
 NCC shield logo on front · swimmer silhouette + arc text on back
 
-| Slot | Color | Used For |
-|:---:|---|---|
-| 1 | 🔵 Navy Blue | Outer rim · diamond body · swimmer |
-| 2 | 🩶 Dark Gray | Accent ring *(swap for gold to make it pop)* |
-| 3 | 🩵 Carolina Blue | Inner field (both faces) |
-| 4 | ⚪ White | NCC letters · arc text |
+| Slot | Color              | Used For                                     |
+|:----:|--------------------|----------------------------------------------|
+|  1   | 🔵 Navy Blue       | Outer rim · diamond body · swimmer           |
+|  2   | 🩶 Dark Gray       | Accent ring *(swap for gold to make it pop)* |
+|  3   | 🩵 Carolina Blue   | Inner field (both faces)                     |
+|  4   | ⚪ White           | NCC letters · arc text                       |
 
 → [Full details](nccs_challenge_coin/README.md)
 
@@ -36,12 +36,12 @@ NCC shield logo on front · swimmer silhouette + arc text on back
 
 Sea turtle silhouette + "TURTLES,INC." arc on front · NCC school logo on back
 
-| Slot | Color | Used For |
-|:---:|---|---|
-| 1 | ⚫ Black | Outer rim · turtle silhouette · NCC diamond |
-| 2 | 🟡 Gold | Accent ring · NCC border outline |
-| 3 | 🟢 Green | Inner field (base layer) |
-| 4 | ⚪ White | Arc text · NCC letters |
+| Slot | Color    | Used For                                    |
+|:----:|----------|---------------------------------------------|
+|  1   | ⚫ Black | Outer rim · turtle silhouette · NCC diamond |
+|  2   | 🟡 Gold  | Accent ring · NCC border outline            |
+|  3   | 🟢 Green | Inner field (base layer)                    |
+|  4   | ⚪ White | Arc text · NCC letters                      |
 
 → [Full details](turtles/README.md)
 
@@ -49,13 +49,13 @@ Sea turtle silhouette + "TURTLES,INC." arc on front · NCC school logo on back
 
 ## Specifications
 
-| Parameter | Value |
-|---|---|
-| Diameter | 50 mm |
-| Thickness | 5.0 mm |
-| Relief height | 0.6 mm |
-| Colors | 4 (AMS slots 1–4) |
-| Supports | None required |
+| Parameter     | Value             |
+|---------------|-------------------|
+| Diameter      | 50 mm             |
+| Thickness     | 5.0 mm            |
+| Relief height | 0.6 mm            |
+| Colors        | 4 (AMS slots 1–4) |
+| Supports      | None required     |
 
 ---
 
