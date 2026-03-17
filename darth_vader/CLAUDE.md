@@ -22,12 +22,12 @@
 - See `~/projects/3dprint/lessons/` for full Bambu 3MF spec and patterns
 
 ## Obverse (top face)
-- Center: Darth Vader helmet silhouette in Black
-- Top arc: `"VENTI SALTED CARAMEL CREAM COLD BREW"` in White (36 chars, size=1.8, angle=4.5°)
-- Bottom arc: `"... BUT DARK CARAMEL"` in White (20 chars, size=2.2, angle=6.5°)
+- Center: Darth Vader helmet silhouette in Black (scale=0.261)
+- Top arc: `"DARTH VADER DRINK"` in White (17 chars, size=3.2, angle=7.5°)
+- Bottom arc: `"PETERSIMMONS@DUCK.COM"` in White (21 chars, size=2.8, angle=7°)
 
 ## Reverse (bottom face)
-- Center: Starbucks siren silhouette in White on Green field
+- Centered horizontal text: drink recipe in White on Green field (4 lines)
 
 ## Context
 Inside joke coin — gift for the local Starbucks coffee shop where the owner orders this
@@ -43,10 +43,9 @@ BUT DARK CARAMEL."
 
 ## SVG Sources
 - `src/vader_helmet.svg` — Darth Vader helmet silhouette, traced from logos-world.net PNG
-- `src/starbucks_siren.svg` — Starbucks siren (white elements), traced from logos-world.net PNG
+- `archive/starbucks_siren.svg` — Starbucks siren (archived, not used in current design)
 
 ## Tuning Notes
-- `vader_scale = 0.32` — keeps helmet within text arcs
-- `siren_scale = 0.36` — fills reverse field without clipping
-- Top arc: `char_angle=4.5°`, `start_angle=78.75°` — fits 36 chars across top hemisphere
-- Bottom arc: `char_angle=6.5°`, `start_angle=-61.75°` — centers 20 chars at bottom
+- `vader_scale = 0.261` — keeps helmet within text arcs (shrunk 10% from 0.29)
+- Top arc: `char_angle=7.5°`, `start_angle=60°`, `size=3.2` — 17 chars, legible at print size
+- Bottom arc: `char_angle=7°`, `start_angle=-70°`, `size=2.8` — 21 chars, legible at print size

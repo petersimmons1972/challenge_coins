@@ -15,8 +15,8 @@ dubbed *"VENTI SALTED CARAMEL CREAM COLD BREW... BUT DARK CARAMEL."*
 
 ## Design
 
-**Front:** Darth Vader helmet silhouette (Black) on Starbucks Green field, encircled by the drink name in White
-**Back:** Starbucks siren silhouette (White) on Starbucks Green field
+**Front:** Darth Vader helmet silhouette (Black) on Starbucks Green field, encircled by "DARTH VADER DRINK" / "PETERSIMMONS@DUCK.COM" in White
+**Back:** Drink recipe in centered horizontal text (White) on Starbucks Green field
 
 ## Colors
 
@@ -51,5 +51,6 @@ python3 -m pytest test_3mf.py  # verify 18 tests pass
 
 | Position   | Text                                      |
 |------------|-------------------------------------------|
-| Top arc    | `VENTI SALTED CARAMEL CREAM COLD BREW...` |
-| Bottom arc | `BUT DARK CARAMEL`                        |
+| Top arc (front)    | `DARTH VADER DRINK`                             |
+| Bottom arc (front) | `PETERSIMMONS@DUCK.COM`                         |
+| Back (4 lines)     | `VENTI SALTED / CARAMEL CREAM / COLD BREW / ... BUT DARK CARAMEL` |
