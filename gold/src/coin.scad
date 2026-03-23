@@ -169,13 +169,13 @@ module bottom_arc_text(str, radius, size, start_angle, char_angle) {
 module obverse_text_2d() {
     // "CHATTAHOOCHEE GOLD" — 18 chars, top arc
     arc_text("CHATTAHOOCHEE GOLD",
-             radius=text_r, size=2.3,
-             start_angle=61, char_angle=7.2);
+             radius=text_r, size=2.65,
+             start_angle=70, char_angle=8.3);
 
-    // "WOODSTOCK" — bottom arc
-    bottom_arc_text("WOODSTOCK",
-                    radius=text_r, size=2.3,
-                    start_angle=-32, char_angle=8.0);
+    // "WOODSTOCK, GA" — 13 chars, bottom arc
+    bottom_arc_text("WOODSTOCK, GA",
+                    radius=text_r, size=2.65,
+                    start_angle=-50, char_angle=8.3);
 }
 
 // =====================================================================
@@ -196,13 +196,13 @@ module reverse_text_2d() {
     mirror([1, 0, 0]) {
         // "CHATTAHOOCHEE GOLD" — top arc
         arc_text("CHATTAHOOCHEE GOLD",
-                 radius=text_r, size=2.3,
-                 start_angle=61, char_angle=7.2);
+                 radius=text_r, size=2.65,
+                 start_angle=70, char_angle=8.3);
 
-        // "2026 SWIM TEAM" — bottom arc
+        // "2026 SWIM TEAM" — 14 chars, bottom arc
         bottom_arc_text("2026 SWIM TEAM",
-                        radius=text_r, size=2.3,
-                        start_angle=-44, char_angle=7.2);
+                        radius=text_r, size=2.65,
+                        start_angle=-54, char_angle=8.3);
     }
 }
 

@@ -16,7 +16,7 @@ total_h  = 5.0;
 rim_w    = 2.5;
 accent_w = 1.2;
 relief   = 0.6;
-gold_relief = 1.2;  // gold ring raised above green field
+gold_relief = 0;    // flush with top face
 
 // Derived
 inner_r = coin_d/2 - rim_w;
@@ -174,11 +174,11 @@ module black_parts() {
 // 2. GOLD: accent ring + NCC border outline (reverse)
 module gold_parts() {
     color(gold_c) {
-        // Accent ring — raised above green field
+        // Accent ring — flush with top face
         difference() {
-            cylinder(h=total_h + gold_relief, r=inner_r, $fn=128);
+            cylinder(h=total_h, r=inner_r, $fn=128);
             translate([0, 0, -0.01])
-                cylinder(h=total_h + gold_relief + 0.02, r=field_r, $fn=128);
+                cylinder(h=total_h + 0.02, r=field_r, $fn=128);
         }
         // NCC border outline on reverse
         ncc_border_3d();
