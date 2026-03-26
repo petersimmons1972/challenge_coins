@@ -1,0 +1,22 @@
+# Generated STL files (large, regeneratable via build.sh)
+build/*.stl
+
+# Debug and scratch renders
+build/*.png
+
+# Python cache
+__pycache__/
+
+# Source archives
+src/*.zip
+src/*.pbm
+
+# Scratch/reference images
+src/capybara_silhouette.svg
+src/Laughing with bold colors.png
+
+# Empty scaffold dirs
+docs/
+
+# Unrelated files
+../linkedin_quote.png
